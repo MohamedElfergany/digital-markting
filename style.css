@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#carouselExampleSlidesOnly{
+    height: 80vh;
+    overflow: hidden;
+}
+@media screen and (max-width:970px){
+    #carouselExampleSlidesOnly{
+        height: 100%;
+    }
+   
+    #carouselExampleSlidesOnly h3{
+        display: none;
+      }  
+        #carouselExampleSlidesOnly h1{
+        display: none;
+      }  
+        #carouselExampleSlidesOnly  #btn{
+        display: none;
+      }  
+}
+#carouselExampleSlidesOnly::after{
+    content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background-color: rgba(0, 0, 0, 60%);
+}
+#carouselExampleSlidesOnly a i{
+    background-color: black;
+}
+#carouselExampleSlidesOnly a i :hover{
+    background-color: aliceblue;
+}
+
+#m{
+    color: black;
+      animation-name:icon ;
+      animation-duration: 0.5s;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+}
+@keyframes icon{
+    0%{
+        translate:0 0em;
+    }
+    50%{
+      translate: 0 10px;  
+    }
+    100%{
+        translate: 0 0em;
+    }
+}
+/* .our-services span{
+    width: 25%;
+    height: 50%;
+    background-color: aqua;
+} */
+.her::after{
+    content: "";
+width: 60%;
+height: 0.2em;
+position: absolute;
+border-radius: 20%;
+top: 100%;
+left: 20%;
+background-color: darkgrey;
+   
+}
+.text-card{
+    background-color: fuchsia;
+    transition: 1s all;
+    position: relative;
+    width: 100%;
+}
+.text-card .text-services{
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    display: none;
+    transition: 1s all;
+}
+.text-card:hover .text-services{
+    background-color: rgb(48, 29, 222);
+    box-shadow: black;
+    display: block;
+    height: 100%;
+    top: 0%;
+    right:0% ;
+    border-radius: 3%;
+    line-height: 300%;
+    
+}
+.text-card-one{
+    background-color: rgb(66, 21, 173);
+    transition: 1s all;
+    position: relative;
+}
+.text-card-one .text-services-one{
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    display: none;
+    transition: 1s all;
+}
+.text-card-one:hover .text-services-one{
+    background-color: rgb(19, 186, 100);
+    box-shadow: black;
+    display: block;
+    height: 100%;
+    top: 0%;
+    right:0% ;
+    border-radius: 3%;
+    line-height: 300%;
+    
+}
+.text-card-two{
+    background-color: rgb(48, 141, 85);
+    transition: 1s all;
+    position: relative;
+}
+.text-card-two .text-services-two{
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    display: none;
+    transition: 1s all;
+}
+.text-card-two:hover .text-services-two{
+    background-color: rgb(224, 241, 41);
+    box-shadow: black;
+    display: block;
+    height: 100%;
+    top: 0%;
+    right:0% ;
+    border-radius: 3%;
+    line-height: 300%;
+    
+}
+.text-card-three{
+    background-color:#557A00;
+    transition: 1s all;
+    position: relative;
+}
+.text-card-three .text-services-three{
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    display: none;
+    transition: 1s all;
+}
+.text-card-three:hover .text-services-three{
+    background-color: rgb(232, 89, 13);
+    box-shadow: black;
+    display: block;
+    height: 100%;
+    box-shadow: 10% 10%;
+    top: 0%;
+    right:0% ;
+    border-radius: 3%;
+    line-height: 300%;
+    
+}
+.text-card:hover i{
+    display: none;
+}
+.text-porfoloi{
+    position: absolute;
+    color: aliceblue;
+    bottom: -10px;
+    left: 0;
+    
+    /* transform: translate(10%); */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 3rem 3rem;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 1rem;
+    display: none;
+    background-color: brown;
+    width: 97%;
+    height: 97%;
+    animation-name:textprofile ;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    
+    
+}
+@keyframes textprofile{
+    0%{
+transform: scale(0);
+    }
+   
+    100%{
+        transform: scale(1);
+    }
+}
+.photo{
+    transition: 1s all;
+}
+.photo:hover .text-porfoloi{
+    display: flex;
+    /* transform: scale(1.2); */
+    
+}
